@@ -12,7 +12,7 @@ This is the front page of a website that is powered by the [academicpages templa
 
 研究领域
 ======
-1. FISCO BCOS, Ethereum, Hyperledger Fabric 等区块链技术，擅长Solidity智能合约开发与分布式应用
+1. FISCO BCOS, Ethereum, Hyperledger Fabric 等区块链技术
 2. 现代密码学，量子计算，量子通讯，量子密码学，量子编程
 3. C/C++，Go，Vue，QT，Linux，树莓派硬件开发，HarmonyOS
 
