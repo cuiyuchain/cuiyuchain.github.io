@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网络攻击与防御实验</title>
+
+    <style>
+        .area {
+            width: 410px;
+            height: 540px;
+            /* background-color: transparent;    */
+            /* background-color: red; */
+            background-color: hsl(112, 69%, 43%);
+            border-radius: 20px;
+            margin: 0 auto;
+            padding-top: 5px;
+            padding-left: 20px;
+            color: rgb(255, 255, 255);
+            margin-top: 50px;
+            border: rgb(10, 123, 122) solid 2px;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        input[type=text] {
+             width: 130px;
+             padding: 0 25px;
+             height: 31px;
+             border: 2px solid hsl(312, 8%, 88%);
+             background: hsl(300, 27%, 88%);
+             color: hsl(198, 76%, 44%);
+             font-size: 18px;
+             line-height: 48px;
+             border-radius: 25px;
+        }
+        input[type=text8] {
+             width: 243px;
+             padding: 0 25px;
+             height: 31px;
+             border: 2px solid hsl(312, 8%, 88%);
+             background: hsl(300, 27%, 88%);
+             color: hsl(282, 83%, 45%);
+             font-size: 18px;
+             line-height: 48px;
+             border-radius: 25px;
+        }
+        input[type=text3] {
+             width: 335px;
+             padding: 0 25px;
+             height: 130px;
+             border: 2px solid hsl(312, 8%, 88%);
+             background: hsl(300, 27%, 88%);
+             color: hsl(222, 83%, 45%);
+             font-size: 18px;
+             line-height: 48px;
+             border-radius: 25px;
+        }
+        input[type=text]:focus{
+        
+         border: 3px solid hsl(309, 89%, 51%);
+         
+        }
+        input[type=submit] {
+             width: 390px;
+             padding: 0 25px;
+             height: 40px;
+             border: 2px solid hsl(181, 95%, 53%);
+             background: hsl(211, 83%, 47%);
+             color: hsl(300, 22%, 96%);
+             font-size: 18px;
+             line-height: 30px;
+             border-radius: 25px;
+             text-align: center;
+             
+        }
+        input[type=reset] {
+             width: 80px;
+             padding: 0 25px;
+             height: 30px;
+             border: 2px solid hsl(183, 97%, 51%);
+             background: hsl(170, 80%, 31%);
+             color: hsl(183, 98%, 42%);
+             font-size: 14px;
+             line-height: 30px;
+             border-radius: 25px;
+             text-align: center;
+             
+        }
+        input[type=file] {
+             width: 335px;
+             padding: 0 25px;
+             height: 36px;
+             border: 2px solid hsl(50, 96%, 58%);
+             background: hsl(210, 96%, 48%);
+             color: hsl(180, 12%, 97%);
+             font-size: 14px;
+             line-height: 30px;
+             border-radius: 25px;
+             text-align: center;
+             
+        }
+        input[type=man] {
+             width: 300px;
+             padding: 0 25px;
+             height: 30px;
+             border: 2px solid hsl(50, 96%, 58%);
+             background: hsl(13, 96%, 48%);
+             color: hsl(180, 12%, 97%);
+             font-size: 14px;
+             line-height: 30px;
+             border-radius: 25px;
+             text-align: center;
+             
+        }
+        
+        
+    </style>
+
+<style>
+    .bottomstyle{
+        
+        position: fixed;
+        bottom: 0;
+    }
+     .select{
+        color: hsl(210, 96%, 48%);
+        /* font-size: large; */
+        border-radius: 20px;
+        background-color: hsl(210, 96%, 48%);
+        border-color: rgb(0, 252, 252);
+        border-style: solid;
+        border-width: 3px;
+        width: 384px;
+        height:35px;
+        
+        
+
+
+   } 
+    #img1{
+        padding: 10px;
+    }
+
+    a{
+        color: rgb(197, 239, 202);
+        font-size: 22px;
+        border-color: darkcyan;
+        border-radius: 10px;     
+        text-decoration: none;
+        
+    }
+   
+  
+    body {
+        background-image: url(/img/background.png);
+        background-repeat: no-repeat;
+        background-size:100% 100%;
+        background-position: center top;
+        /* 把背景图片固定住 */
+        background-attachment: fixed;
+        border-radius: 10px;     
+        font-size: 15px;
+    }
+</style>
+
+
+
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+</script>
+<script>
+
+$(document).ready(function(){
+   
+    
+
+    //打开下方注释可以实现，一次点击生成两个文件
+    // var $eleBtn2 = $("#button"); 
+    // $eleBtn2.click(function(){ 
+    // console.log($eleBtn2)
+    // window.open("/home/falchion/CloudEncryptSystem/CloudSMencryptSystem/text.pem"); 
+
+});
+ 
+    
+    
+  
+  
+ 
+
+</script>
+</head>
+<body>
+
+    <div class="area">
+
+        <form action="/uploads"  method="post" name="first_form">
+          
+            <a>网络攻击与防御实验 崔宇 信安20-1</a>
+            
+
+            <br>
+            <br>
+
+            <label for = "text8">用户姓名:</label>
+            
+            <input type="text8" id = "username" name = "username" value="" placeholder="string"  >
+            <br>
+            <br>
+            <label for = "text8">用户密码:</label> 
+            <input type="text8" id = "sign" name = "sign" value="" placeholder="string">
+            <br>
+            <br>
+            <input type="file" name="files"><br>
+
+            <br>
+            <br>
+            <input type="submit" id = "sign" name = "sign" value="提交信息" >
+
+           
+            
+            <img src="/img/block.png" id="img1" width="365" height="190"/> 
+            
+            <span style="font-family:arial;">Copyright &copy; 2023 cuiyu</span> 
+        </form>
+        
+       
+
+        
+        
+        
+    </div>
+    <div class="bottomstyle" ><a href="http://127.0.0.1:8000/cuiyu">返回主页</a></div>
+</body>
+</html>
